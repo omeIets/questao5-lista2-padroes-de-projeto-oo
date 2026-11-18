@@ -11,15 +11,15 @@ public class TudoMaiuscula {
         return texto.toCharArray();
     }
 
-    private static char[] converterCaracteresEmMinusculo(char[] chars) {
+    private static char[] converterCaracteresEmMaiusculo(char[] chars) {
         char[] resultado = new char[chars.length];
         for (int i = 0; i < chars.length; i++) {
-            resultado[i] = Character.toLowerCase(chars[i]);
+            resultado[i] = Character.toUpperCase(chars[i]);
         }
         return resultado;
     }
 
-    private static String juntarCaracteresAgoraMinusculo(char[] chars) {
+    private static String juntarCaracteresAgoraMaiusculo(char[] chars) {
         return new String(chars);
     }
 }

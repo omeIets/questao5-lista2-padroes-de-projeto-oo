@@ -7,18 +7,19 @@ public class TudoMinuscula {
         return resultado;
     }
 
-    private static String juntarCaracteresAgoraMinusculo(char[] chars) {
-        // TODO Auto-generated method stub
-        return null;
+    private static char[] extrairCaracteres(String texto) {
+        return texto.toCharArray();
     }
 
     private static char[] converterCaracteresEmMinusculo(char[] chars) {
-        // TODO Auto-generated method stub
-        return null;
+        char[] resultado = new char[chars.length];
+        for (int i = 0; i < chars.length; i++) {
+            resultado[i] = Character.toLowerCase(chars[i]);
+        }
+        return resultado;
     }
 
-    private static char[] extrairCaracteres(String texto) {
-        // TODO Auto-generated method stub
-        return null;
+    private static String juntarCaracteresAgoraMinusculo(char[] chars) {
+        return new String(chars);
     }
 }
