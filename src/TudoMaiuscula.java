@@ -8,17 +8,18 @@ public class TudoMaiuscula {
     }
 
     private static char[] extrairCaracteres(String texto) {
-        // TODO Auto-generated method stub
-        return null;
+        return texto.toCharArray();
     }
 
-    private static char[] converterCaracteresEmMaiusculo(char[] chars) {
-        // TODO Auto-generated method stub
-        return null;
+    private static char[] converterCaracteresEmMinusculo(char[] chars) {
+        char[] resultado = new char[chars.length];
+        for (int i = 0; i < chars.length; i++) {
+            resultado[i] = Character.toLowerCase(chars[i]);
+        }
+        return resultado;
     }
 
-    private static String juntarCaracteresAgoraMaiusculo(char[] chars) {
-        // TODO Auto-generated method stub
-        return null;
+    private static String juntarCaracteresAgoraMinusculo(char[] chars) {
+        return new String(chars);
     }
 }
